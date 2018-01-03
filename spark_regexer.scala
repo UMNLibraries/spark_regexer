@@ -1,7 +1,6 @@
 import org.apache.spark.SparkContext
 import org.apache.spark.SparkConf
 import org.apache.spark.rdd.RDD
-import scala.collection.mutable.ArrayBuffer
 import scala.io.Source
 
 
