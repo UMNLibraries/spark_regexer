@@ -1,6 +1,6 @@
 # Spark Regexer
 
-Takes a large file from S3, searches it with your provided regular expression, and outputs the found records to an S3 bucket of your choice.
+Takes a large file from S3, searches it with your provided regular expression, and outputs matching records to an S3 bucket of your choice.
 
 
 ## Run locally
