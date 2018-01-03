@@ -8,9 +8,7 @@ object SparkRegexer {
   def main(args: Array[String]) {
     val conf = new SparkConf().setAppName("SparkRegexer")
     val sc = new SparkContext(conf)
-    val s3File = args(0)
-    val s3Out = args(1)
-    val pattern =  args(2)
+    val Array(s3File, s3Out, pattern) = args
     val lines = sc.textFile(s"s3a://$s3File")
     val matches: RDD[String] =
       lines.filter(
